@@ -1,7 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var WR2 = sequelize.define(
-    "WR2",
-    {
+    "wr2", {
       rank: DataTypes.INTEGER,
       name: DataTypes.STRING,
       team: DataTypes.STRING,
@@ -12,8 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       yardsPerReception: DataTypes.DECIMAL,
       receptionsPerGame: DataTypes.DECIMAL,
       receivingYardsPerGame: DataTypes.DECIMAL
-    },
-    {
+    }, {
       timestamps: false
     }
   );

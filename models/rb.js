@@ -1,7 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var RB = sequelize.define(
-    "RB",
-    {
+    "rb", {
       rank: DataTypes.INTEGER,
       name: DataTypes.STRING,
       team: DataTypes.STRING,
@@ -12,8 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       receptions: DataTypes.INTEGER,
       receivingYards: DataTypes.INTEGER,
       receivingTouchdowns: DataTypes.INTEGER
-    },
-    {
+    }, {
       timestamps: false
     }
   );

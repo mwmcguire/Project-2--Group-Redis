@@ -1,7 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var K = sequelize.define(
-    "K",
-    {
+    "k", {
       rank: DataTypes.INTEGER,
       name: DataTypes.STRING,
       team: DataTypes.STRING,
@@ -12,8 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       epa: DataTypes.INTEGER,
       epm: DataTypes.INTEGER,
       epp: DataTypes.DECIMAL
-    },
-    {
+    }, {
       timestamps: false
     }
   );

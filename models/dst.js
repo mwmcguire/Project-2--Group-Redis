@@ -1,7 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var DST = sequelize.define(
-    "DST",
-    {
+    "dst", {
       rank: DataTypes.INTEGER,
       // name: DataTypes.STRING,
       team: DataTypes.STRING,
@@ -12,8 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       intTouchdowns: DataTypes.INTEGER,
       forcedFumbles: DataTypes.INTEGER,
       ffTouchdowns: DataTypes.INTEGER
-    },
-    {
+    }, {
       timestamps: false
     }
   );
