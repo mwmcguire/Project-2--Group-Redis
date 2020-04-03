@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  var QB = sequelize.define(
+  var qb = sequelize.define(
     "qb", {
       rank: DataTypes.INTEGER,
       name: DataTypes.STRING,
@@ -15,5 +15,5 @@ module.exports = function (sequelize, DataTypes) {
       timestamps: false
     }
   );
-  return QB;
+  return qb;
 };
